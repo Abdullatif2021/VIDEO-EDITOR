@@ -1,5 +1,6 @@
 {
   "name": "montage",
+  "homepage": "https://Abdullatif2021.github.io/VIDEO-EDITOR",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tauri-apps/api": "^1.4.0",
